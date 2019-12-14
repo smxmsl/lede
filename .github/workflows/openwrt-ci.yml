@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 # 
 
-name: X64 OPENWRT
+name: 带ddns
 
 on:
   schedule:
@@ -163,6 +163,8 @@ jobs:
           CONFIG_PACKAGE_luci-app-webadmin=y
           CONFIG_PACKAGE_luci-app-wireguard=y
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
+          CONFIG_PACKAGE_luci-app-aliddns
+          CONFIG_PACKAGE_luci-app-dnspod
           EOF
 
           # LuCI主题:
